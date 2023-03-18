@@ -6,13 +6,6 @@ const app = express();
 
 //middlewares
 app.use(express.json());
-
-
-// Routes
-app.get('/', (req, res) => {
-    res.send("Weather API")
-})
-
 app.use("/weather", weatherRouter)
 
 
